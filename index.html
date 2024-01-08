@@ -13,15 +13,19 @@
             overflow: hidden;
         }
 
-        iframe {
+        object {
             width: 100%;
             height: 100%;
-            border: 0; /* Remove border */
+            max-width: 100%; /* Ensure responsiveness */
         }
     </style>
 </head>
 <body>
-    <iframe src="percy.pdf" width="100%" height="100%"></iframe>
+    <!-- <iframe src="percy.pdf" type="application/pdf" width="100%" height="100%"></iframe> -->
+    <object data="percy.pdf" type="application/pdf" width="100%" height="100%">
+        <!-- Your browser does not support PDFs.
+        <a href="your-catering-menu.pdf">Download PDF</a> -->
+    </object>
 
 </body>
 </html>
